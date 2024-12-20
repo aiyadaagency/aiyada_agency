@@ -24,7 +24,7 @@ gsap.from(".hero-section .right .circle-btn", {
   duration: 1,
   onComplete: () => {
     gsap.to(".hero-section .left .overflow-hidden img", {
-      left: 0,
+      left: -255,
       duration: 1,
       ease: "power1.inOut",
     });
