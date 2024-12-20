@@ -40,7 +40,7 @@ gsap.to(".hero-section .left .overflow-hidden img", {
 gsap.from(".project-lists img", {
   left: 1500,
   rotation: 35,
-  stagger: 1,
+  stagger: 0.3,
   ease: "power1.ease",
   onComplete: () => {
     let images = document.querySelectorAll(".project-lists");
