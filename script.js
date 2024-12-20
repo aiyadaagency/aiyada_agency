@@ -25,7 +25,7 @@ gsap.from(".hero-section .right .circle-btn", {
   onComplete: () => {
     gsap.to(".hero-section .left .overflow-hidden img", {
       left: 0,
-      duration: 0.7,
+      duration: 1,
       ease: "power1.inOut",
     });
   },
@@ -40,7 +40,7 @@ gsap.to(".hero-section .left .overflow-hidden img", {
 gsap.from(".project-lists img", {
   left: 1500,
   rotation: 35,
-  stagger: 0.3,
+  stagger: 1,
   ease: "power1.ease",
   onComplete: () => {
     let images = document.querySelectorAll(".project-lists");
