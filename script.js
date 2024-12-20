@@ -33,7 +33,7 @@ gsap.from(".hero-section .right .circle-btn", {
 
 gsap.to(".hero-section .left .overflow-hidden img", {
   left: -255,
-  duration: 5,
+  duration: 0.7,
   ease: "power1.inOut",
 });
 
@@ -45,7 +45,7 @@ gsap.from(".project-lists img", {
   onComplete: () => {
     let images = document.querySelectorAll(".project-lists");
     images.forEach((item) => {
-      item.style.animation = "slide 18s linear infinite";
+      item.style.animation = "slide 59s linear infinite";
     });
   },
 });
