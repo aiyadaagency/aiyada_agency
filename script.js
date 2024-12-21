@@ -64,7 +64,7 @@ gsap.from(".project-lists img", {
   onComplete: () => {
     let images = document.querySelectorAll(".project-lists");
     images.forEach((item) => {
-      item.style.animation = "slide 59s linear infinite";
+      item.style.animation = "slide 259s linear infinite";
     });
   },
 });
