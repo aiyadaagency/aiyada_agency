@@ -43,10 +43,13 @@ gsap.from(".project-lists img", {
   stagger: 0.3,
   ease: "power1.ease",
   onComplete: () => {
-    let images = document.querySelectorAll(".project-lists");
-    images.forEach((item) => {
-      item.style.animation = "slide 59s linear infinite";
-    });
+    // Triggering infinite animation immediately after 1 second
+    setTimeout(() => {
+      let images = document.querySelectorAll(".project-lists img");
+      images.forEach((item) => {
+        item.style.animation = "slide 59s linear infinite";
+      });
+    }, 1000); // Delay reduced to 1 second
   },
 });
 
