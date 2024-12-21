@@ -42,14 +42,30 @@ gsap.from(".project-lists img", {
   rotation: 35,
   stagger: 0.3,
   ease: "power1.ease",
+  onComplete: gsap.to(".hero-section .left .overflow-hidden img", {
+      left: 0,
+      duration: 1,
+      ease: "power1.inOut",
+    });
+  },
+});
+
+gsap.to(".hero-section .left .overflow-hidden img", {
+  left: -255,
+  duration: 0.7,
+  ease: "power1.inOut",
+});
+
+gsap.from(".project-lists img", {
+  left: 1500,
+  rotation: 35,
+  stagger: 0.3,
+  ease: "power1.ease",
   onComplete: () => {
-    // Triggering infinite animation immediately after 1 second
-    setTimeout(() => {
-      let images = document.querySelectorAll(".project-lists img");
-      images.forEach((item) => {
-        item.style.animation = "slide 19s linear infinite";
-      });
-    }, 1000); // Delay reduced to 1 second
+    let images = document.querySelectorAll(".project-lists");
+    images.forEach((item) => {
+      item.style.animation = "slide 59s linear infinite";
+    });
   },
 });
 
