@@ -47,7 +47,7 @@ gsap.from(".project-lists img", {
     setTimeout(() => {
       let images = document.querySelectorAll(".project-lists img");
       images.forEach((item) => {
-        item.style.animation = "slide 59s linear infinite";
+        item.style.animation = "slide 19s linear infinite";
       });
     }, 1000); // Delay reduced to 1 second
   },
