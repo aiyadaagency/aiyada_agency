@@ -37,19 +37,6 @@ gsap.to(".hero-section .left .overflow-hidden img", {
   ease: "power1.inOut",
 });
 
-gsap.from(".project-lists img", {
-  left: 1500,
-  rotation: 35,
-  stagger: 0.3,
-  ease: "power1.inOut",
-  onComplete: () => {
-    let images = document.querySelectorAll(".project-lists");
-    images.forEach((item) => {
-      item.style.animation = "slide 12s linear infinite";
-    });
-  },
-});;
-
 gsap.to(".hero-section .left .overflow-hidden img", {
   left: -255,
   duration: 0.7,
@@ -61,12 +48,12 @@ gsap.from(".project-lists img", {
   rotation: 35,
   stagger: 0.3,
   ease: "power1.ease",
-  onComplete: () => {
+  onStart: () => {
     let images = document.querySelectorAll(".project-lists");
     images.forEach((item) => {
-      item.style.animation = "slide 259s linear infinite";
+      item.style.animation = "slide 50s linear infinite";
     });
-  },
+  }
 });
 
 gsap.from(".services .line1", {
