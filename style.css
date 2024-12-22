@@ -356,8 +356,8 @@ header .menu {
 .project-lists {
   white-space: nowrap;
   display: flex;
-  gap: 28px;
-  margin-right: 12px;
+  gap: 25px;
+  margin-right: 25px;
 }
 
 .project-lists img {
