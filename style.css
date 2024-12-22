@@ -135,7 +135,10 @@ body {
   line-height: normal;
   letter-spacing: -0.36px;
 }
-
+.popup .buttons .gamilButton {
+  display: flex;
+  gap: 15px;
+}
 .popup .buttons button:hover {
   border: 0.5px solid #ff5833;
   background-color: transparent;
