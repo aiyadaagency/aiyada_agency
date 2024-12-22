@@ -41,14 +41,14 @@ gsap.from(".project-lists img", {
   left: 1500,
   rotation: 35,
   stagger: 0.3,
-  ease: "power1.ease",
-  onComplete: gsap.to(".hero-section .left .overflow-hidden img", {
-      left: 0,
-      duration: 1,
-      ease: "power1.inOut",
+  ease: "power1.inOut",
+  onComplete: () => {
+    let images = document.querySelectorAll(".project-lists");
+    images.forEach((item) => {
+      item.style.animation = "slide 12s linear infinite";
     });
   },
-});
+});;
 
 gsap.to(".hero-section .left .overflow-hidden img", {
   left: -255,
