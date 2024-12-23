@@ -268,7 +268,7 @@ paragraphs.forEach(paragraph => {
     paragraph.innerHTML = htmlString;
 });
 
-spans = [...document.querySelectorAll('span')];
+spans = [...document.querySelectorAll('.reveal-text-effect span')];
 
 function revealSpans() {
     for(let i = 0; i < spans.length; i++) {
