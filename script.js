@@ -255,3 +255,5 @@ menu.addEventListener("click", () => {
 });
 
 //
+
+let paragraphs = [...document.querySelector(".text-reveal-effect")]
