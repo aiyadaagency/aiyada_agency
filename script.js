@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from("header > *", {
   y: -150,
@@ -256,4 +256,33 @@ menu.addEventListener("click", () => {
 
 //
 
-let paragraphs = [...document.querySelector(".text-reveal-effect")]
+let paragraphs = [...document.querySelectorAll(".reveal-text-effect")]
+let spans = [];
+
+paragraphs.forEach(paragraph => {
+    let htmlString = '';
+    let pArray = paragraph.textContent.split('');
+    for(let i = 0; i < pArray.length; i++) {
+        htmlString += `<span>${pArray[i]}</span>`;
+    }
+    paragraph.innerHTML = htmlString;
+});
+
+spans = [...document.querySelectorAll('span')];
+
+function revealSpans() {
+    for(let i = 0; i < spans.length; i++) {
+        let {left, top} = spans[i].getBoundingClientRect();
+        top = top - (window.innerHeight * .5);
+        let opacityValue = 1 - ((top * .01) + (left * 0.001)) < 0.1 ? 0.1 : 1 - ((top * .01) + (left * 0.001));
+        opacityValue = opacityValue > 1 ? 1 : opacityValue.toFixed(3);
+        spans[i].style.opacity = opacityValue;
+    }
+}
+
+window.addEventListener('scroll', () => {
+    revealSpans();
+});
+
+revealSpans();
+
