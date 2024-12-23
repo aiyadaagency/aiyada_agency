@@ -160,10 +160,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 70px;
+  padding: 16px 70px;
   position: fixed;
   width: 100%;
   background: white;
+  z-index: 99;
 }
 
 header svg {
@@ -1430,8 +1431,8 @@ header .menu {
 
 @media screen and (max-width: 600px) {
   body > header {
-    padding: 0 16px !important;
-    margin-top: 16px;
+    padding: 16px !important;
+    margin-top: 0px;
     z-index: 100;
     background-color: white;
   }
