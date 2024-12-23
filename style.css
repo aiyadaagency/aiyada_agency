@@ -867,10 +867,6 @@ header .menu {
   text-decoration: none;
 }
 
-.reveal-text-effect span {
-  opacity: 0.1;
-}
-
 /* Media Queries */
 
 @media screen and (max-width: 1280px) {
