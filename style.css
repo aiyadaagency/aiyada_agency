@@ -160,10 +160,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
-  padding: 0 70px;
+  padding: 32px 70px;
   position: fixed;
   width: 100%;
+  background: white;
 }
 
 header svg {
